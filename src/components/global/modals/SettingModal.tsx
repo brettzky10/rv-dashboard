@@ -1,5 +1,5 @@
-import { Icons } from "../icons";
-import { Button } from "../ui/button";
+import { Icons } from "@/components/icons";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -9,10 +9,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../ui/dialog";
-import { SettingForm } from "../forms/SettingForm";
-import { readSetting } from "@/actions";
-import { Badge } from "../ui/badge";
+} from "@/components/ui/dialog";
+import { SettingForm } from "@/components/global/forms/SettingForm";
+import { readSetting } from "@/lib/actions";
+import { Badge } from "@/components/ui/badge";
 
 export async function SettingModal() {
   const result = await readSetting();

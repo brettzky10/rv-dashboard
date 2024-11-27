@@ -7,9 +7,9 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "../ui/drawer";
-import { Button } from "../ui/button";
-import { ProfileForm } from "../forms/ProfileForm";
+} from "@/components/ui/drawer";
+import { Button } from "@/components/ui/button";
+import { ProfileForm } from "@/components/global/forms/ProfileForm";
 import { User } from "lucide-react";
 
 export function ProfileDrawer() {
