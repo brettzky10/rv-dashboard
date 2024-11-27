@@ -1,10 +1,10 @@
 "use client";
 import { startTransition, useTransition } from "react";
-import { Icons } from "../icons";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
-import { createSetting } from "@/actions";
-import { toast } from "../ui/use-toast";
+import { Icons } from "@/components/icons";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { createSetting } from "@/lib/actions";
+
 import * as z from "zod";
 import {
   Form,
@@ -14,10 +14,11 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "../ui/form";
+} from "@/components/ui/form";
 import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 const FormSchema = z.object({
   entityType: z.string({
@@ -54,9 +55,8 @@ export const SettingForm = () => {
 
       if (error?.message) {
         console.log(error.message);
-        toast({
-          variant: "destructive",
-          title: "You submitted the following values:",
+        toast.error("You submitted the following values:",{
+          
           description: (
             <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
               <code className="text-white">{error.message}</code>
@@ -64,9 +64,9 @@ export const SettingForm = () => {
           ),
         });
       } else {
-        console.log("succes");
-        toast({
-          title: "You submitted the following values:",
+        console.log("success");
+        toast.success("You submitted the following values:",{
+          
           description: (
             <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
               <code className="text-white">Successfully Send</code>
