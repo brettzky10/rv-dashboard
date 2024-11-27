@@ -1,6 +1,8 @@
 'use client'
 import Spline from "@splinetool/react-spline";
 
+
+
 export default function SplineComponent() {
   return (
     <div className="h-screen">

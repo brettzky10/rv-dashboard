@@ -1,10 +1,13 @@
-'use client'
-import Spline from "@splinetool/react-spline";
+import SplineComponent from '@/components/dashboard/spline-component'
 
-export default function SplineComponent() {
+import React from 'react'
+
+const HomePage = () => {
   return (
-    <div className="h-screen">
-      <Spline scene="https://prod.spline.design/r8n9DcRmCAX8oliX/scene.splinecode" />
+    <div>
+      <SplineComponent/>
     </div>
-  );
+  )
 }
+
+export default HomePage
