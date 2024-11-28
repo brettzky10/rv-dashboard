@@ -17,14 +17,13 @@ export default async function page() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#111627] to-[#344378]" />
             <div className="relative z-20 flex items-center text-lg font-medium">
               <Icons.sunset className="h-20 w-20" />
-              Weather Station
+              RV Dashboard
             </div>
             <div className="relative z-20 mt-auto">
               <blockquote className="space-y-2">
                 <p className="text-lg">
-                  &ldquo;Get real-time weather updates on the go with our
-                  portable station, making it easy to stay informed and adjust
-                  to changing conditions wherever you are.&rdquo;
+                  &ldquo;Get real-time updates on the go with our
+                  realtime RV dashboard.&rdquo;
                 </p>
                 <footer className="text-sm pt-3">Made with ♡</footer>
               </blockquote>
