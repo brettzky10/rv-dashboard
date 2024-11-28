@@ -13,7 +13,7 @@ const HomePage = () => {
         SignIn
         </Button>
       </Link>
-      <Link href="/Dashabord">
+      <Link href="/dashboard">
         <Button>
         Dashboard
         </Button>
