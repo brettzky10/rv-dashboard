@@ -26,7 +26,7 @@ export default async function page() {
                   portable station, making it easy to stay informed and adjust
                   to changing conditions wherever you are.&rdquo;
                 </p>
-                <footer className="text-sm pt-3">Made with ♡ by Mirutec</footer>
+                <footer className="text-sm pt-3">Made with ♡</footer>
               </blockquote>
             </div>
           </div>
